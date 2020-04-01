@@ -5,16 +5,15 @@ with open("readme.md", "r") as fh:
 
 setuptools.setup(
     name="gaga-phsp",
-    version="0.5",
+    version="0.5.1",
     author="David Sarrut",
     author_email="david.sarrut@creatis.insa-lyon.fr",
     description="Python tools for GATE GAN simulations",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/dsarrut/gaga",
-    package_dir={'':'src'},
-    packages=setuptools.find_packages('gaga-phsp'),
-    #packages=['pygan'],
+    packages=['gaga'],
+    package_dir={'gaga': 'src'},
     classifiers=(
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License",
